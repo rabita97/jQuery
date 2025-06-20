@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Click Counter</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<link rel="stylesheet" href="jquerystyle.css">
+</head>
+<body>
+
+  <h1>jQuery Click Counter</h1>
+  <div id="counter-box">0</div>
+  <button id="count-btn">Click Me</button>
+
+  <script>
+    $(document).ready(function () {
+      let count = 0;
+      $('#count-btn').click(function () {
+        count++;
+        $('#counter-box').text(count);
+      });
+    });
+  </script>
+
+</body>
+</html>
